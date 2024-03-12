@@ -31,6 +31,7 @@ import { join } from 'path';
     }),
     UserModule,
     BookModule,
+
   ],
   controllers: [AppController],
   providers: [AppService],

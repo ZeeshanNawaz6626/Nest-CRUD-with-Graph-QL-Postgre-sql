@@ -27,7 +27,6 @@ export interface Book {
 
 export interface IQuery {
     books(): Book[] | Promise<Book[]>;
-    book(id: number): Book | Promise<Book>;
 }
 
 export interface IMutation {

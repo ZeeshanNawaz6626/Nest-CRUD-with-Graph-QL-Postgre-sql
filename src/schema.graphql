@@ -10,7 +10,6 @@ type Book {
 
 type Query {
   books: [Book!]!
-  book(id: Int!): Book!
 }
 
 type Mutation {

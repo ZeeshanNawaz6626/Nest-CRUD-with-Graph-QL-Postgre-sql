@@ -14,11 +14,7 @@ export class BookService {
     return books;
   }
 
-  async findBookById(id: number):Promise<BookEntity> {
-    let book = await this.bookRepo.findOne({where:{id:id}});
-    return book;
-  }
-
+  
   async deleteBook(id: number):Promise<string> {
     await this.bookRepo.delete(id);
     return "Book ha benn deleted";
